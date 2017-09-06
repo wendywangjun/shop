@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+        <title>商品详情</title>
+    </head>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/goodslist.css">
+    <link rel="stylesheet" type="text/css" href="css/goodsdetial.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <body>
+         <div id="sh-detial">
+    <div class="sh-title">
+      <span><i class="sh-back"></i></span>
+          商品详情
+      </div>
+      <div class="banner">
+          <div class="swiper-container" id="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/图层-31@2x.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/图层-8@2x.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/图层-6@2x.png" alt=""></div>
+              </div>
+          </div>
+      </div>
+      <div class="sh-choose-title">
+          裕大华1919--2017年中国时装周走秀款第一款火热的火烈鸟束腰连衣裙
+      </div>
+      <div class="sh-choose-money">
+          <span><i>￥</i>1200</span>&nbsp;&nbsp;<font>￥3600</font>
+      </div>
+      <div class="sh-shoper border-1px"><div class="sh-shoper-name">快递：0.00</div> <div class="sh-shop-status">库存：1999</div></div>
+      <div class="sh-10line"></div>
+      <div class="sh-btn-shop-lan">
+        <div @click="showDetial" class="rule">规格<img :class="classRotate" src="./img/down@2x.png" alt=""></div>
+        <div class="bgyellow">加入购物车</div>
+        <div class="yellow">立即购买</div>
+      </div>
+      <div class="sh-detial-det">
+        <div class="left">
+          <span class="active">图文详情</span>
+        </div>
+        <div class="right">
+          <span>商品参数</span>
+        </div>
+      </div>
+      <div class="sh-detial-picture">
+        <img src="./img/18@2x.png" alt="">
+      </div>
+      <div :class="showChoose" class="sh-detial-choose">
+        <div class="sh-detial-top">
+            <div class="picture">
+              <img src="./img/图层-36@2x.png" alt="">
+            </div>
+            <div class="sh-detial-money">
+              <div class="sh-det-money">
+                <font><span>￥</span>1200</font>
+                <em>￥3600</em>
+              </div>
+              <div class="sh-detial-ku">
+                库存：3200
+              </div>
+            </div>
+            <i @click="showDetial" class="detial-close"></i>
+        </div>
+        <div class="choose-goods">
+          <div class="sh-color-choose">
+          <font class="text">颜色</font>
+          <div class="colors-list">
+            <ul>
+                <li style="background-color:#ffc6c9"></li>
+                <li style="background-color:#c6e5ff"></li>
+                <li style="background-color:#e2e4e5"></li>
+                <li class="choosed" style="background-color:#ffffff"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sh-color-choose sh-det-topmar">
+          <font class="text">尺码</font>
+          <div class="colors-list">
+            <ul>
+                <li class="rule-choosed">XS</li>
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+                <li>XL</li>
+                <li>XXL</li>
+                <li>XXXL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="sh-detial-num">
+          <font>数量</font>
+            <div class="sh-detial-total">
+            <i>-</i>
+            <font>1</font>
+            <i>+</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-show="isHsow" @click="showDetial" :class="shwoMask" class="marks-detial">
+
+      </div>
+  </div>
+    </body>
+    <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function () {
+/*        var mySwiper = new Swiper ('#swiper-container', {
+            autoplay: 5000,
+            loop: true
+        });*/
+               new Vue({
+                   el:'#sh-detial',
+            data:{
+                  isHsow: false,
+                  classRotate: '',
+                  showChoose: '',
+                  shwoMask: ''
+              },
+              mounted() {
+                var mySwiper = new Swiper('#swiper-container', {
+                  autoplay: 5000,
+                  loop: true
+                });
+              },
+              methods: {
+                showDetial: function(){
+                  if(this.isHsow){
+                    this.isHsow = false;
+                    this.classRotate = '';
+                    this.showChoose = '';
+                    this.shwoMask = '';
+                  }else{
+                    this.isHsow = true;
+                    this.classRotate = 'up';
+                    this.showChoose = 'show-sh-detial-choose';
+                    this.shwoMask = 'show-marks-detial';
+                  }
+                }
+              }
+      }) 
+    }) 
+    </script>
+    
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="./css/orderValue.css">
+    <title>学员评价</title>
+</head>
+<body>
+   <div class="main">
+    <div class="sh-list-title">
+                        订单号：<span>SH132131465465613213</span>
+                    </div>
+                    <div class="sh-shoper border-1px">
+                        <div class="sh-shoper-name">店铺名称：猫狗的店铺名字</div>
+                    </div>
+                    <div class="sh-shoper-detial">
+                        <div class="shoerdetial">
+                            <div class="shop-img">
+                                <img src="img/图层-31@2x.png" alt="">
+                            </div>
+                            <div class="shoptext">
+                                <div class="shoper-tt">裕大华1919-中国时装周走秀款第一款火热的火烈鸟束腰连衣裙款火热的火烈鸟束腰连衣裙款火热的火烈鸟束腰连衣裙</div>
+                                <div class="shop-rule">
+                                    <div class="shop-rule-s">
+                                        颜色：红色 &nbsp;&nbsp; 尺码：S
+                                    </div>
+                                    <div class="shop-rule-n">
+                                        x 1
+                                    </div>
+                                </div>
+                                <div class="money">
+                                    ￥ 1980.00
+                                </div>
+                                <div class="shop-move-money">
+                                    运费：10.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <div class="titles">
+        <span class="line1"></span>
+        <div class="ndud">商品评价</div>
+    </div>
+    <div class="eval">
+        <div class="voer topm1">
+            <div class="floatL voerleft">描述相符</div>
+            <div class="floatL voerright" id="profession">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+            </div>
+        </div>
+        <div class="voer topm26">
+            <div class="floatL voerleft">服务态度</div>
+            <div class="floatL voerright" id="server">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+            </div>
+        </div>
+         <div class="voer topm26">
+            <div class="floatL voerleft">发货速度</div>
+            <div class="floatL voerright" id="order">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+                <img src="./img/xing.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="textarea">
+        <textarea name="" id="" cols="30" rows="10" placeholder="留言提交后将所有人可见，不填将默认好评"></textarea>
+    </div>
+<!--    <div class="pingjia"><input class="checkbox" type="checkbox"><lable class="checkbox" id="nike" is='0'>匿名评价</lable></div>-->
+    <div class="btn"><a href="javascript:;" id="submit">提交</a></div>
+           
+   </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+<script>
+// rem
+(function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if(clientWidth>640){
+                clientWidth = 640;
+                $('.main').css('width','640px');
+            }
+            if (!clientWidth) return;
+            docEl.style.fontSize = 20 * (clientWidth / 640) + 'px';
+        };
+
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+     // 获取url中的参数
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); // 构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg); // 匹配目标参数
+    if (r != null)
+        return unescape(r[2]);
+    return null; // 返回参数值
+}
+
+$(document).ready(function(){
+    $('.btn').show();
+    $('#profession img').on('click',function(){
+        var index = $(this).index();//index是星级下标        
+        starPro = starClick('#profession',index);
+    });
+    $('#server img').on('click',function(){
+        var index = $(this).index();//index是星级下标        
+        starSer = starClick('#server',index);
+    });
+    $('#order img').on('click',function(){
+        var index = $(this).index();//index是星级下标       
+        starOrd = starClick('#order',index);
+    });
+    function starClick(el,index){
+        var imgList = $(el).find('img');
+        $.each(imgList, function(i, item){
+            $(item).attr('src','./img/xing0.png');
+            if(index>=i){
+                $(item).attr('src','./img/xing.png');
+            }
+        })
+        return index+1;
+    }
+})    
+</script>
+</html>

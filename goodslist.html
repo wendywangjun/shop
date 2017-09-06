@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+        <meta content="telephone=no,email=no" name="format-detection">
+        <link rel="apple-touch-icon" href="favicon.png">
+        <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+        <title>订单详情</title>
+    </head>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/goodslist.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <body>
+
+
+        <div class="sh-title">
+            <span><i class="sh-back"></i></span>
+            订单列表
+        </div>
+        <div id="header" class="border-1px">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide active">全部</div>
+                <div class="swiper-slide">待付款</div>
+                <div class="swiper-slide">待发货</div>
+                <div class="swiper-slide">待收货</div>
+                <div class="swiper-slide">已完成</div>
+                <div class="swiper-slide">退换货</div>
+                <div class="swiper-slide">取消货</div>
+                <div class="swiper-slide">其他</div>
+            </div>
+        </div>
+
+
+
+
+        <div class="sh-10line"></div>
+        <div class="sh-goods-detial-list">
+            <ul>
+                <li>
+                    <div class="sh-list-title">
+                        订单号：<span>SH132131465465613213</span>
+                    </div>
+                    <div class="sh-shoper border-1px">
+                        <div class="sh-shoper-name">小华的店铺名字</div>
+                        <div class="sh-shop-status warning">待付款</div>
+                    </div>
+                    <div class="sh-shoper-detial">
+                        <div class="shoerdetial">
+                            <div class="shop-img">
+                                <img src="img/图层-31@2x.png" alt="">
+                            </div>
+                            <div class="shoptext">
+                                <div class="shoper-tt">裕大华1919-中国时装周走秀款第一款火热的火烈鸟束腰连衣裙</div>
+                                <div class="shop-rule">
+                                    <div class="shop-rule-s">
+                                        颜色：红色 &nbsp;&nbsp; 尺码：S
+                                    </div>
+                                    <div class="shop-rule-n">
+                                        x 1
+                                    </div>
+                                </div>
+                                <div class="money">
+                                    ￥ 1980.00
+                                </div>
+                                <div class="shop-move-money">
+                                    运费：10.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sh-shoper border-1px">
+                        <div class="sh-shoper-name">共一件商品(含运费￥10.00)</div>
+                        <div class="sh-shop-status">合计：<span class="warning">￥1990.00</span></div>
+                    </div>
+                    <div class="shop-btn border-1px">
+                        <div class="shop-btn-tbn par4">付款</div>
+                        <div class="shop-btn-tbn">取消订单</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sh-footer">
+            <div class="sh-footer-bgcomm sh-footer-bgcomm-index"><span>首页</span></div>
+            <div class="sh-footer-bgcomm sh-footer-bgcomm-design"><span>设计师</span></div>
+            <div class="sh-footer-top">
+            <font class="sh-top"><img class="sh-footer-bgcomm-top" src="img/top@2x.png" alt=""></font><span>时尚圈</span></div>
+            <div class="sh-footer-bgcomm sh-footer-bgcomm-shop"><span>购物车</span></div>
+            <div class="sh-footer-bgcomm sh-footer-bgcomm-user"><span>我的</span></div>
+        </div>
+    </body>
+    <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function () {
+        var mySwiper1 = new Swiper('#header',{
+            freeMode : true,
+            slidesPerView : 'auto',
+            freeModeSticky : true,
+            preventLinksPropagation : false
+        });
+    })
+    </script>
+</html>

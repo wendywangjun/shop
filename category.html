@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <title>全部商品</title>
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/goodslist.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/category.css"/>
+</head>
+<body>
+    <div class="sh-header1">
+        <input type="text"placeholder="输入商品搜索"/>
+        <button>搜索</button>
+    </div>
+    <div id="header" class="border-1px" style="background-color: #2a2a2a;color:white;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide active">全部商品</div>
+        <div class="swiper-slide">原创设计</div>
+        <div class="swiper-slide">1919定制</div>
+        <div class="swiper-slide">品牌服饰</div>
+        <div class="swiper-slide">设计师定制</div>
+        <div class="swiper-slide">其他</div>
+      </div>
+    </div>
+    <table class="adb sh-one border-soo">
+        <tr>
+            <td><span>女</span>装<br/><p>LADIES</p></td>
+        </tr>
+    </table>
+
+    <table class="adb sh-two border-soo">
+        <tr>
+            <td><span>男</span>装<br/><p>MENS' WEAR</p></td>
+        </tr>
+    </table>
+
+    <table class="adb sh-j border-tr border-tl border-trrr-half">
+        <tr>
+            <td><span>上</span>衣<br/><p>JACKET</p></td>
+        </tr>
+    </table>
+    <table class="adb sh-t border-tr border-trr border-tlll-half">
+        <tr>
+            <td><span>下</span>装<br/><p>TROUSERS</p></td>
+        </tr>
+    </table>
+    <table class="adb sh-s border-tr border-tl border-trrr-half">
+        <tr>
+            <td><span>裙</span>子<br/><p>SKIRT</p></td>
+        </tr>
+    </table>
+    <table class="adb sh-a border-tr border-trr border-tlll-half">
+        <tr>
+            <td><span>配</span>饰<br/><p>ACCESSORIES</p></td>
+        </tr>
+    </table>
+<div class="sh-footer">
+        <div class="sh-footer-bgcomm sh-footer-bgcomm-index"><span>首页</span></div>
+        <div class="sh-footer-bgcomm sh-footer-bgcomm-design"><span>设计师</span></div>
+        <div class="sh-footer-top">
+        <font class="sh-top"><img class="sh-footer-bgcomm-top" src="img/top@2x.png" alt=""></font><span>时尚圈</span></div>
+        <div class="sh-footer-bgcomm sh-footer-bgcomm-shop"><span>购物车</span></div>
+        <div class="sh-footer-bgcomm sh-footer-bgcomm-user"><span>我的</span></div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function () {
+        var mySwiper1 = new Swiper('#header',{
+            freeMode : true,
+            slidesPerView : 'auto',
+            freeModeSticky : true,
+            preventLinksPropagation : false
+        });
+    })
+    </script>
+</html>

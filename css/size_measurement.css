@@ -1,0 +1,288 @@
+/************input***************/
+.sh-size-measurement{
+    margin-left:4%;
+    margin-right:4%;
+}
+.sh-size-head{
+    margin-left:4%;
+    margin-right:4%;
+}
+.sh-size-name{
+    margin-bottom:0.4rem;
+    vertical-align:middle;
+}
+.sh-size-name span{
+    font-size:14px;
+    display: inline-block;
+    width:25%;
+}
+[data-dpr="2"] .sh-size-name span{
+    font-size:28px;
+}
+[data-dpr="3"] .sh-size-name span{
+    font-size:42px;
+}
+.sh-size-name input{
+    outline: none;
+    width:68%;
+    height:25px;
+    margin-left:4%;
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    line-height:25px;
+    vertical-align:middle;
+}
+[data-dpr="2"] .sh-size-name input{
+    height:50px;
+    line-height:50px;
+}
+[data-dpr="3"] .sh-size-name input{
+    height:75px;
+    line-height:75px;
+}
+
+
+.sh-size-sex span{
+    font-size:14px;
+    min-height:16px;
+    display: inline-block;
+    width:25%;
+}
+[data-dpr="2"] .sh-size-sex span{
+    font-size:28px;
+}
+[data-dpr="3"] .sh-size-sex span{
+    font-size:42px;
+}
+.sh-size-sex{
+    font-size:14px;
+    vertical-align: middle;
+    margin-bottom:0.4rem;
+}
+[data-dpr="2"] .sh-size-sex{
+    font-size:28px;
+}
+[data-dpr="3"] .sh-size-sex{
+    font-size:42px;
+}
+.sh-size-sex p{
+    display:inline-block;
+    margin-right:.4rem;
+}
+.sh-size-sex p span{
+    border:3px solid #ffe933;
+    min-width:10px;
+    min-height:10px;
+    border-radius:50%;
+    vertical-align: text-bottom;
+    line-height:15px;
+}
+[data-dpr="2"] .sh-size-sex p span{
+    border:6px solid #ffe933;
+    min-width:20px;
+    min-height:20px;
+    line-height:30px;
+}
+[data-dpr="3"] .sh-size-sex p span{
+    border:9px solid #ffe933;
+    min-width:30px;
+    min-height:30px;
+    line-height:45px;
+}
+
+.sh-size-sex p:last-child span{
+    border:3px solid #ddd;
+    min-width:10px;
+    min-height:10px;
+    border-radius:50%;
+    vertical-align: text-bottom;
+    line-height:15px;
+}
+[data-dpr="2"] .sh-size-sex p:last-child span{
+    border:6px solid #ddd;
+    min-width:20px;
+    min-height:20px;
+    line-height:30px;
+}
+[data-dpr="3"] .sh-size-sex p:last-child span{
+    border:9px solid #ddd;
+    min-width:30px;
+    min-height:30px;
+    line-height:45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*************±í¸ñ***************/
+/*.sh-size-table table tr td,.sh-size-table table tr th{*/
+    /*/!*border:1px solid black;*!/*/
+    /*width:1%;*/
+    /*height:35px;*/
+    /*text-align: center;*/
+    /*/!*border:1px solid #E3E197;*!/*/
+    /*/!*background-color: #FFFFDD;*!/*/
+    /*border:1px solid #ffe933;*/
+    /*background-color:#feffc3; /!*#F2FDDB;*!/*/
+
+/*}*/
+/*/!*.sh-size-table thead{*!/*/
+    /*/!*font-size:12px;*!/*/
+/*/!*}*!/*/
+/*/!*[data-dpr="2"] .sh-size-table thead{*!/*/
+    /*/!*font-size:24px;*!/*/
+/*/!*}*!/*/
+/*/!*[data-dpr="3"] .sh-size-table thead{*!/*/
+    /*/!*font-size:32px;*!/*/
+/*/!*}*!/*/
+/*.sh-size-table{*/
+    /*margin-top:0.8rem;*/
+/*}*/
+/*.sh-size-table tbody tr td:first-child{*/
+    /*/!*background-color:#c4bdbd ;*!/*/
+/*}*/
+
+.table{
+    width:100%;
+    text-align:center;
+    overflow:hidden;
+    font-size:14px;
+    margin:20px 0 0 0;
+    line-height:30px;
+}
+[data-dpr="2"] .table{
+    font-size:28px;
+    margin:40px 0 0 0;
+    line-height:60px;
+}
+[data-dpr="3"] .table{
+    font-size:44px;
+    margin:60px 0 0 0;
+    line-height:90px;
+}
+
+
+.test-div{
+    width:25%;
+    float:left;
+    position:relative;
+    box-shadow:2px 0 10px 5px #F2FDDB;
+}
+.sh-size-right{
+    width:75%;
+    overflow-x:hidden;
+}
+
+.sh-size-right tr th,tr td{
+    width:25%;
+    height:30px;
+    z-index:1;
+}
+
+.nav-table{
+    width:100%;
+}
+.nav-table th{
+   text-align:center;
+}
+.nav-table th td{
+    padding-left:0;
+}
+.cont-table-div{
+    width:75%;
+    float:left;
+    overflow-x: auto;
+}
+.content-table{
+    width:auto;
+}
+.content-table tr th{
+    width:200px;
+    padding:0 10px;
+    white-space:nowrap;
+}
+
+.content-table tr td{
+    width:200px;
+    padding:0 10px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #feffc3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************option*****************/
+.sh-size-boption{
+    margin-top:0.8rem;
+    margin-left:4%;
+    margin-right:4%;
+}
+.sh-size-option span{
+    display: inline-block;
+    width:35%;
+    margin-right:10%;
+    font-size:14px;
+}
+[data-dpr="2"] .sh-size-option span{
+    font-size:28px;
+}
+[data-dpr="3"] .sh-size-option span{
+    font-size:42px;
+}
+.sh-size-option select{
+    height:25px;
+    width:50%;
+    /*border-radius:10px;*/
+    margin-bottom:0.4rem;
+    padding-left: 10px;
+    border:1px solid #e5e5e5;
+}
+[data-dpr="2"] .sh-size-option select{
+    height:50px;
+}
+[data-dpr="3"] .sh-size-option select{
+    height:75px;
+}
+.sh-size-option select option{
+    font-size:14px;
+}
+[data-dpr="2"] .sh-size-option select option{
+    font-size:28px;
+}
+[data-dpr="3"] .sh-size-option select option{
+    font-size:42px;
+}
+
+.sh-size-option select option{
+    border:1px solid #e5e5e5;
+    width:50%;
+}
+
+
+
+
+
+
+
+

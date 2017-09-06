@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <title>商家首页</title>
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/goodslist.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/shopindex.css"/>
+</head>
+<body>
+<div>
+  <div>
+    <span>
+      <div class="sh-title">
+        <span>
+          <i class="sh-back"></i>
+        </span>商家首页</div>
+    </span>
+    <span>
+      <div class="sh-bus-search">
+        <div class="sh-bus-logo">
+          <img src="./img/logo@2x (2).png" alt=""></div>
+        <div class="sh-bus-search-input">
+          <input type="" name="" placeholder="输入商品关键词搜索"></div>
+        <div class="sh-bus-search-btn">搜索</div></div>
+    </span>
+    <div id="header" class="border-1px swiper-container-horizontal swiper-container-free-mode" style="background-color: rgb(42, 42, 42); color: white;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide active swiper-slide-active">全部商品</div>
+        <div class="swiper-slide swiper-slide-next">热销商品</div>
+        <div class="swiper-slide">最近新品</div>
+        <div class="swiper-slide">商品分类</div></div>
+    </div>
+    <div class="banner">
+      <span>
+        <div class="banner">
+          <div class="swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper" style="transform: translate3d(-1656px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 828px;">
+                <img src="./img/图层-6@2x.png" alt=""></div>
+              <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 828px;">
+                <img src="./img/图层-8@2x.png" alt=""></div>
+              <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 828px;">
+                <img src="./img/图层-6@2x.png" alt=""></div>
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 828px;">
+                <img src="./img/图层-8@2x.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div class="sh-small-title">
+      <div class="sh-small-title-font">热销商品</div>
+      <div class="sh-more">更多</div></div>
+    <div>
+      <div class="sh-news">
+        <div class="sh-news-l">
+          <img src="./img/show@2x.png" alt=""></div>
+        <div class="sh-news-r">
+          <img src="./img/banner@2x (2).png" alt=""></div>
+      </div>
+      <div class="sh-tow-news">
+        <div class="sh-tow-img">
+          <img src="./img/图层-6@2x.png" alt=""></div>
+        <div class="sh-tow-img sh-lf">
+          <img src="./img/图层-8@2x.png" alt=""></div>
+      </div>
+    </div>
+    <div class="sh-10line"></div>
+    <div class="sh-small-title">
+      <div class="sh-small-title-font">商品展示</div>
+      <div class="sh-more">更多</div>
+    </div>
+     <div class="sh-double">
+        <ul>
+          <li class="border-1px">
+            <a href="javascript:;">
+              <div class="sh-double-imgs">
+                <img src="./img/23@2x.png" alt="">
+              </div>
+              <div class="sh-double-title">
+                <p>无袖秀场米色时尚长款可多穿风衣</p>
+              </div>
+              <div class="sh-double-font">
+                <span><i>￥</i>1980.00</span>
+                <font>￥5999.00</font>
+              </div>
+            </a>
+          </li>
+           <li class="border-1px">
+            <a href="javascript:;">
+              <div class="sh-double-imgs">
+                <img src="./img/23@2x.png" alt="">
+              </div>
+              <div class="sh-double-title">
+                <p>无袖秀场米色时尚长款可多穿风衣</p>
+              </div>
+              <div class="sh-double-font">
+                <span><i>￥</i>2980.00</span>
+                <font>￥5999.00</font>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="sh-footer">
+    <div class="sh-footer-bgcomm sh-footer-bgcomm-index">
+      <span>首页</span></div>
+    <div class="sh-footer-bgcomm sh-footer-bgcomm-design">
+      <span>设计师</span></div>
+    <div class="sh-footer-top">
+      <font class="sh-top">
+        <img src="./img/top@2x.png" alt="" class="sh-footer-bgcomm-top"></font>
+      <span>时尚圈</span></div>
+    <div class="sh-footer-bgcomm sh-footer-bgcomm-shop">
+      <span>购物车</span></div>
+    <div class="sh-footer-bgcomm sh-footer-bgcomm-user">
+      <span>我的</span></div>
+  </div>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+          autoplay: 5000,
+          loop: true
+        });
+         var mySwiper1 = new Swiper('#header', {
+            freeMode: true,
+            slidesPerView: 'auto',
+            freeModeSticky: true,
+            preventLinksPropagation: false
+        });
+    })
+    </script>
+</html>
